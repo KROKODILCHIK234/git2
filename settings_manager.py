@@ -46,10 +46,10 @@ class settings_maneger(object):
 
     def convert(self):
         if len(self.__data) == 0:
-            raise Exception("Проблема с созданием экземпляра класса settings")
+            raise Exception("проблема при создании экземпляра класса settings")
         fields = self.__settings.get_data_keys
         if len(self.__data) < len(fields):
-            raise Exception("Входных данных мало, некоторые поля пустые")
+            raise Exception("Входных данных мало, есть пустые поля")
         for field in fields:
             value = self.__data[field]
             setattr(self.__settings, field, value)
