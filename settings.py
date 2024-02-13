@@ -54,21 +54,21 @@ class settings:
 
         self.__korr_check = value.strip()
 
-    @.setter
+    @inn.setter
     def (self, value: str):
         if not isinstance(value, str) and len(value) == 12 and value.isnumeric():
             raise Exception("Неверный аргумент!")
 
         self.__inn = value.strip()
 
-    @name_of_product.setter
+    @name_product.setter
     def name_product(self, value: str):
         if not isinstance(value, str):
             raise Exception("Неверный аргумент!")
 
         self.__name_product = value.strip()
 
-    @name_of_company.setter
+    @name_company.setter
     def name_company(self, value: str):
         if not isinstance(value, str) and len(value) == 5:
             raise Exception("Неверный аргумент!")
